@@ -22,15 +22,21 @@ public class MessageEvent {
 
     @Subscribe
     public void onMessage(MessageReceiveEvent event) {
-        if (ClearChatAddon.instance.enabled) {
-        if (event.getComponent().getString().trim().isEmpty()) {
-            event.setCancelled(true);
-        } else {
-            event.setCancelled(false);
-        }
-    }  else {
-
-        }
+     
+     if (ClearChatAddon.instance.enabled) {
+     
+      if (event.getComponent().getString().trim().isEmpty()) {
+        
+       event.setCancelled(true);
+      
+      } else {
+      
+       event.setCancelled(false);
+      
+      }
+         
+     }
+     
     }
 
 }
