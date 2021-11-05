@@ -1,20 +1,6 @@
-package de.combit.anticlearchat;/*
+package me.einsluca.anticlearchat;
 
- __                           _      _  _   
-/  |                         | |    (_)| |  
-`| |   ___   ___   _ __ ___  | |__   _ | |_ 
- | |  / __| / _ \ | '_ ` _ \ | '_ \ | || __|
-_| |_| (__ | (_) || | | | | || |_) || || |_ 
-\___/ \___| \___/ |_| |_| |_||_.__/ |_| \__|
-
-» Class created by 1combit | Luca
-» Date: 03.06.2021 | 15:53
-» 1combit#8044
-
-
- */
-
-import de.combit.anticlearchat.listener.MessageEvent;
+import me.einsluca.anticlearchat.listener.MessageEvent;
 import net.labymod.api.LabyModAddon;
 import net.labymod.main.LabyMod;
 import net.labymod.settings.elements.BooleanElement;
