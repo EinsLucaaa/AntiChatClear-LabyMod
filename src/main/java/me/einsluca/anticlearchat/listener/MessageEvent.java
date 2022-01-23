@@ -8,9 +8,8 @@ public class MessageEvent {
 
     @Subscribe
     public void onMessage(MessageReceiveEvent event) {
-     
-     if (ClearChatAddon.instance.enabled) {
-         event.setCancelled(event.getComponent().getString().trim().isEmpty());
-     }
+        if (ClearChatAddon.getInstance().isEnabled() && event.getComponent().getString().trim().isEmpty()) {
+            event.setCancelled(true);
+        }
     }
 }

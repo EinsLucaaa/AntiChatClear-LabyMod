@@ -31,6 +31,14 @@ public class ClearChatAddon extends LabyModAddon {
 
     }
 
+    public static ClearChatAddon getInstance() {
+        return instance;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
     @Override
     protected void fillSettings(List<SettingsElement> list) {
         BooleanElement booleanElement = new BooleanElement("Enabled", new ControlElement.IconData(Material.GREEN_DYE), new Consumer<Boolean>() {
